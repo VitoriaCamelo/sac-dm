@@ -84,6 +84,8 @@ def sac_am(data, N):
 		sacdm[k] = 1.0*s/N
 		inicio = fim
 		fim = fim + N
+		if k == 1:
+			break
 
 		
 
@@ -359,10 +361,10 @@ def plot_SAC_AM_DM_motor_signals():
 #********* Main ********
 file_paths = [#'/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/galvao_original_denoised.csv'
 			  #, '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/galvao_ia_denoised.csv'
-			  '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/lud_original_denoised.csv'
-			  , '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/lud_ia_denoised.csv'
-			  , '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/ivete_original_denoised.csv'
-			  , '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/ivete_ia_denoised.csv'
+			  'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/lud_original_denoised.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/lud_ia_denoised.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/ivete_original_denoised.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/ivete_ia_denoised.csv'
 
 
 				
