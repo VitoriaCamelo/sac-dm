@@ -358,23 +358,12 @@ def plot_SAC_AM_DM_motor_signals():
 
 #taxa de aquisição 45
 #********* Main ********
-file_paths = [#'/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/participante2_audio1_denoised.csv'
-			  #,'/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/participante2_audio2_denoised.csv'
-			  #'/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/participante3_audio1_denoised.csv'
-			  #,'/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/participante3_audio2_denoised.csv'
-			  #,'/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/participante4_audio1_denoised.csv'
-			  #,'/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/participante4_audio2_denoised.csv'
-			  # '/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/ivete_original_denoised.csv'
-			  #, '/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/ivete_ia_denoised.csv'
-			  #, '/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/lud_original_denoised.csv'
-			  #, '/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/lud_ia_denoised.csv'
-
-			  '/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/f01.csv'
-			  '/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/sf01.csv'
-			  '/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/f01_denoised.csv'
-			  ,'/Users/Raul/Documents/GitHub/sac-dm/files/voice_signals/sample/data/sf01_denoised.csv'
-
-			]
+file_paths = [#'/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/galvao_original_denoised.csv'
+			  #, '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/galvao_ia_denoised.csv'
+			  'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/lud_original_denoised.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/lud_ia_denoised.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/ivete_original_denoised.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/ivete_ia_denoised.csv'
 
 
 
