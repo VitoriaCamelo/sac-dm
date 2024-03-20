@@ -84,8 +84,6 @@ def sac_am(data, N):
 		sacdm[k] = 1.0*s/N
 		inicio = fim
 		fim = fim + N
-		if k == 1:
-			break
 
 		
 
