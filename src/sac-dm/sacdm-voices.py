@@ -360,12 +360,11 @@ def plot_SAC_AM_DM_motor_signals():
 #********* Main ********
 file_paths = [#'/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/galvao_original_denoised.csv'
 			  #, '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/galvao_ia_denoised.csv'
-			  'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/lud_original_denoised.csv'
-			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/lud_ia_denoised.csv'
-			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/ivete_original_denoised.csv'
-			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/sample/data/ivete_ia_denoised.csv'
-
-
+			  'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/base/csv/audio-f/f01.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/base/csv/audio-sf/sf01.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/base/csv/audio-f/f01-denoised.csv'
+			  , 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/base/csv/audio-sf/sf01-denoised.csv'
+]
 
 file_columns = ['x']
 file_tags = ['P1 - áudio 1', 'P1 - áudio2', 'P2 - áudio 1', 'P2 - áudio2', 'P3 - áudio 1', 'P3 - áudio2']
