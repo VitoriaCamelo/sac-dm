@@ -40,10 +40,19 @@ def wavelet_denoise(input_wav_file, output_wav_file, wavelet='db1', level=1):
     # Salvar o sinal denoizado como um novo arquivo WAV
     write_wav(output_wav_file, audio_denoised, params)
 
+base_original = 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/base/original/'
+base_denoised = 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/base/denoised/'
+caminhos = [
+    'audio-f/f01', 'audio-f/f02', 'audio-f/f03', 'audio-f/f04', 'audio-f/f05',
+    'audio-m/m01', 'audio-m/m02', 'audio-m/m03', 'audio-m/m04', 'audio-m/m05',
+    'audio-sf/sf01', 'audio-sf/sf02', 'audio-sf/sf03', 'audio-sf/sf04', 'audio-sf/sf05',
+    'audio-sm/sm01', 'audio-sm/sm02', 'audio-sm/sm03', 'audio-sm/sm04', 'audio-sm/sm05',
+]
 
-input_wav_file = '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/original/galvao_ia.wav'
-output_wav_file = '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/denoised/galvao_ia_denoised.wav'
-wavelet_denoise(input_wav_file, output_wav_file)
+#input_wav_file = '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/original/galvao_ia.wav'
+#output_wav_file = '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/denoised/galvao_ia_denoised.wav'
+for i in range(len(caminhos)):
+    wavelet_denoise(base_original+caminhos[i]+".wav", base_denoised+caminhos[i]+".wav")
 
 
 

@@ -29,8 +29,17 @@ def wav_to_csv(input_wav_file, output_csv_file):
             if any(row_data):  # Verifica se pelo menos um valor é diferente de zero
                 csv_writer.writerow(row_data)
 
+base_original = 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/base/denoised/'
+base_csv = 'C:/Users/Vitória Camelo/Documents/sac-dm/files/voice_signals/base/csv/'
+caminhos = [
+    'audio-f/f01', 'audio-f/f02', 'audio-f/f03', 'audio-f/f04', 'audio-f/f05',
+    'audio-m/m01', 'audio-m/m02', 'audio-m/m03', 'audio-m/m04', 'audio-m/m05',
+    'audio-sf/sf01', 'audio-sf/sf02', 'audio-sf/sf03', 'audio-sf/sf04', 'audio-sf/sf05',
+    'audio-sm/sm01', 'audio-sm/sm02', 'audio-sm/sm03', 'audio-sm/sm04', 'audio-sm/sm05',
+]
 
-input_wav_file = '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/original/galvao_ia.wav'
-output_csv_file = '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/galvao_ia.csv'
-wav_to_csv(input_wav_file, output_csv_file)
+#input_wav_file = '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/original/galvao_ia.wav'
+#output_csv_file = '/home/pesquisador/Documentos/sac-dm/files/voice_signals/sample/data/galvao_ia.csv'
+for i in range(len(caminhos)):
+    wav_to_csv(base_original+caminhos[i]+".wav", base_csv+caminhos[i]+"-denoised"+".csv")
 
